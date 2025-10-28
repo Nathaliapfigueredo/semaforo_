@@ -46,13 +46,15 @@ Criar um circuito simples de **semáforo** utilizando três LEDs (vermelho, amar
 
 ## Imagem da Montagem
 Aqui uma imagem da versão física: 
-![Montagem do circuito](fisico.HEIC)
+![Montagem do circuito](semaforo_fisico.HEIC)
+link de acesso a iamgem no drive: https://drive.google.com/file/d/1WLQOChI5o_o7Q9IOHUNzZkRSSO5uhiEm/view?usp=sharing 
 
 A imagem abaixo mostra de forma mais clara a ligação do circuito no Thinkercard:
 
 ![Montagem do circuito](sinal.png)
 
 *(Figura 1 – Ligação dos LEDs e resistores ao Arduino UNO)*
+link de acesso a iamgem no drive: https://drive.google.com/file/d/136HovEDri3Hz8a7AR3yFxQ8mmcljxuxu/view?usp=sharing
 
 Link para vídeo: https://drive.google.com/file/d/1j0iqnQvjdfdibl-fIL-kHuxAf2kdx4Gn/view?usp=sharing 
 
