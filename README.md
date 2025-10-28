@@ -45,8 +45,10 @@ Criar um circuito simples de **semáforo** utilizando três LEDs (vermelho, amar
 
 
 ## Imagem da Montagem
+Aqui uma imagem da versão física: 
+![Montagem do circuito](fisico.png)
 
-A imagem abaixo mostra a ligação completa do circuito:
+A imagem abaixo mostra de forma mais clara a ligação do circuito no Thinkercard:
 
 ![Montagem do circuito](sinal.png)
 
