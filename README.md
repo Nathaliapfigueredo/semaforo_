@@ -15,7 +15,7 @@ Criar um circuito simples de **semáforo** utilizando três LEDs (vermelho, amar
 | LED verde           | 1              | Indicar “Siga” | Tensão típica: 2.2V / Corrente: 20mA |
 | Resistores          | 3              | Limitar corrente dos LEDs | 220 Ω (pode variar até 330 Ω) |
 | Protoboard          | 1              | Facilitar conexões | — |
-| Jumpers (macho-macho) | 8          | Fazer ligações entre Arduino e protoboard | — |
+| Jumpers (macho-macho) | 7          | Fazer ligações entre Arduino e protoboard | — |
 | Cabo USB            | 1              | Alimentação e comunicação com o Arduino | — |
 
 
@@ -40,14 +40,13 @@ Criar um circuito simples de **semáforo** utilizando três LEDs (vermelho, amar
 
 - Ligue os pinos digitais 13, 12 e 11 do Arduino aos resistores (cada um correspondente a um LED).  
 - Conecte o GND do Arduino à linha negativa da protoboard.  
-- Conecte o 5V do Arduino à linha positiva (caso precise alimentar outros componentes no futuro).
 
 
 
 ## Imagem da Montagem
 Aqui uma imagem da versão física: 
-![Montagem do circuito](semaforo_fisico.HEIC)
-link de acesso a iamgem no drive: https://drive.google.com/file/d/1WLQOChI5o_o7Q9IOHUNzZkRSSO5uhiEm/view?usp=sharing 
+![Montagem do circuito](semaforo_fisico.png)
+link de acesso a iamgem no drive: https://drive.google.com/file/d/12M8riEpxMSxOjAuGpDBekK-E9xdVSKOL/view?usp=sharing 
 
 A imagem abaixo mostra de forma mais clara a ligação do circuito no Thinkercard:
 
@@ -56,7 +55,7 @@ A imagem abaixo mostra de forma mais clara a ligação do circuito no Thinkercar
 *(Figura 1 – Ligação dos LEDs e resistores ao Arduino UNO)*
 link de acesso a iamgem no drive: https://drive.google.com/file/d/136HovEDri3Hz8a7AR3yFxQ8mmcljxuxu/view?usp=sharing
 
-Link para vídeo: https://drive.google.com/file/d/1j0iqnQvjdfdibl-fIL-kHuxAf2kdx4Gn/view?usp=sharing 
+Link para vídeo: https://drive.google.com/file/d/1fm2W4zjyNJll-RstV2ZM0f6bxEC5iZu-/view?usp=sharing
 
 ## Justificativas Técnicas
 
