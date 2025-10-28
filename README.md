@@ -45,15 +45,17 @@ Criar um circuito simples de **semáforo** utilizando três LEDs (vermelho, amar
 
 ## Imagem da Montagem
 Aqui uma imagem da versão física: 
-![Montagem do circuito](semaforo_fisico.png)
-link de acesso a iamgem no drive: https://drive.google.com/file/d/12M8riEpxMSxOjAuGpDBekK-E9xdVSKOL/view?usp=sharing 
+
+![Montagem do circuito](fisico.png)
+
+link de acesso a imagem no drive: https://drive.google.com/file/d/12M8riEpxMSxOjAuGpDBekK-E9xdVSKOL/view?usp=sharing 
 
 A imagem abaixo mostra de forma mais clara a ligação do circuito no Thinkercard:
 
 ![Montagem do circuito](sinal.png)
 
 *(Figura 1 – Ligação dos LEDs e resistores ao Arduino UNO)*
-link de acesso a iamgem no drive: https://drive.google.com/file/d/136HovEDri3Hz8a7AR3yFxQ8mmcljxuxu/view?usp=sharing
+link de acesso a imagem no drive: https://drive.google.com/file/d/136HovEDri3Hz8a7AR3yFxQ8mmcljxuxu/view?usp=sharing
 
 Link para vídeo: https://drive.google.com/file/d/1fm2W4zjyNJll-RstV2ZM0f6bxEC5iZu-/view?usp=sharing
 
@@ -73,29 +75,48 @@ Link para vídeo: https://drive.google.com/file/d/1fm2W4zjyNJll-RstV2ZM0f6bxEC5i
 ## Código de Exemplo (Arduino IDE)
 
 ```cpp
-int LED13 = 13;
-int LED12 = 12;
-int LED11 = 11;
-  
-void setup()
-{
-  pinMode(LED13, OUTPUT);
-  pinMode(LED12,OUTPUT);
-  pinMode(LED11, OUTPUT);
+class Led {
+  private:
+    int pino; // o atributo será o número do pino
+
+  public:
+    // inicializa o pino
+    Led(int p) {
+      pino = p;
+      pinMode(pino, OUTPUT);
+    }
+
+    void ligar() {
+      digitalWrite(pino, HIGH);
+    }
+
+    void desligar() {
+      digitalWrite(pino, LOW);
+    }
+
+    // Pisca o LED por um tempo determinado
+    void piscar(int tempo) {
+      ligar();
+      delay(tempo);
+      desligar();
+    }
+};
+
+// Ponteiros para objetos Led
+Led* led13;
+Led* led12;
+Led* led11;
+
+void setup() {
+  // Alocação dinâmica dos LEDs
+  led13 = new Led(13);
+  led12 = new Led(12);
+  led11 = new Led(11);
 }
 
-void loop()
-{
- digitalWrite(LED13, HIGH);
-  delay(6000);
-  digitalWrite(LED13, LOW);
-
-  digitalWrite(LED12, HIGH);
-  delay(2000);
-  digitalWrite(LED12, LOW);
-
-  digitalWrite(LED11, HIGH);
-  delay(4000);
-  digitalWrite(LED11, LOW);
+void loop() {
+  led13->piscar(6000); 
+  led12->piscar(2000);
+  led11->piscar(4000);
 }
 
