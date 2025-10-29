@@ -57,7 +57,7 @@ A imagem abaixo mostra de forma mais clara a ligação do circuito no Thinkercar
 *(Figura 1 – Ligação dos LEDs e resistores ao Arduino UNO)*
 link de acesso a imagem no drive: https://drive.google.com/file/d/136HovEDri3Hz8a7AR3yFxQ8mmcljxuxu/view?usp=sharing
 
-Link para vídeo: https://drive.google.com/file/d/1fm2W4zjyNJll-RstV2ZM0f6bxEC5iZu-/view?usp=sharing
+Link para vídeo: https://drive.google.com/file/d/1VTQuVZYoNfEkF3yr46OMnntpalyLscrK/view?usp=sharing
 
 ## Justificativas Técnicas
 
