@@ -115,8 +115,7 @@ void setup() {
 }
 
 void loop() {
-  led13->piscar(6000); 
-  led12->piscar(2000);
   led11->piscar(4000);
+  led12->piscar(2000);
+  led13->piscar(6000); 
 }
-
